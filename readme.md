@@ -5,6 +5,7 @@ Esse projeto faz uso dos seguintes princípios e tecnologias:
 
 - SOLID
 - DDD - Domain Driven Design
+- Unit Tests
 - CQRS - Command Query Responsibility Segregation
 - Clean Code
 - Repository Pattern
