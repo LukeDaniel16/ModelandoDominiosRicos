@@ -1,0 +1,4 @@
+# Ignorando as pastas bin e obj
+[Bb]in/
+[Oo]bj/
+[Ll]og
