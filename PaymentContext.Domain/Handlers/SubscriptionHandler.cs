@@ -65,7 +65,11 @@ namespace PaymentContext.Domain.Handlers
 
             AddNotifications(name, document, email, address, student, subscription, payment);
 
+            if (Invalid)
+                return new CommandResult(false, "Não foi possível realizar sua assinatura");
+
             _repository.CreateSubscription(student);
+
             _emailService.Send(student.Name.ToString(), student.Email.Address,
                  "Bem vindo ao balta.io", "Sua assinatura foi criada");
 
@@ -110,7 +114,11 @@ namespace PaymentContext.Domain.Handlers
 
             AddNotifications(name, document, email, address, student, subscription, payment);
 
+            if (Invalid)
+                return new CommandResult(false, "Não foi possível realizar sua assinatura");
+
             _repository.CreateSubscription(student);
+
             _emailService.Send(student.Name.ToString(), student.Email.Address,
                  "Bem vindo ao balta.io", "Sua assinatura foi criada");
 
@@ -157,7 +165,11 @@ namespace PaymentContext.Domain.Handlers
 
             AddNotifications(name, document, email, address, student, subscription, payment);
 
+            if (Invalid)
+                return new CommandResult(false, "Não foi possível realizar sua assinatura");
+
             _repository.CreateSubscription(student);
+
             _emailService.Send(student.Name.ToString(), student.Email.Address,
                  "Bem vindo ao balta.io", "Sua assinatura foi criada");
 
