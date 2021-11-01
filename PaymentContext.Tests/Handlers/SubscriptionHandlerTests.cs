@@ -1,11 +1,9 @@
 using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using PaymentContext.Domain.Commands;
-using PaymentContext.Domain.Entities;
 using PaymentContext.Domain.Enums;
 using PaymentContext.Domain.Handlers;
 using PaymentContext.Domain.Mocks;
-using PaymentContext.Domain.ValueObjects;
 
 namespace PaymentContext.Tests
 {
