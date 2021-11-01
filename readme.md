@@ -10,3 +10,6 @@ Esse projeto faz uso dos seguintes padrões e princípios:
 - Clean Code
 - Repository Pattern
 - Fail-Fast Validations
+
+
+<strong>Curso finalizado</strong>
